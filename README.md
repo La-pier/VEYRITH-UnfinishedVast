@@ -23,3 +23,19 @@ The design medium is **HTML/CSS/JS** — these are prototypes, not production co
 - `README.md` — this file
 - `chats/` — conversation transcripts (read these!)
 - `project/` — the `Game world UI mockups` project files (HTML prototypes, assets, components)
+
+## The implemented app
+
+`Veyrith World Codex.dc.html` is implemented as a React + Vite app at the repo root (`src/`). It deploys to Vercel as a static Vite project with no extra config.
+
+```sh
+npm install
+npm run dev     # local dev server
+npm run build   # static build in dist/
+```
+
+- `src/App.jsx`: the atlas, clans and tribes, and canon audit views, plus the designer-view gate
+- `src/data.js`: world data, copied verbatim from the design
+- `src/ds/`: the Veyrith design system (tokens, component CSS, fonts, React primitives)
+
+The design's tweakable props are URL parameters: `?tab=atlas|factions|audit`, `?still=1` (reduced motion), `?provenance=0` (hide source labels).
