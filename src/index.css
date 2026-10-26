@@ -1,0 +1,4 @@
+body{margin:0;background:var(--bg)}
+a{color:var(--teal)}
+a:hover{color:var(--ink)}
+.vy-chip,.vy-btn{white-space:nowrap}

@@ -1,0 +1,29 @@
+/* Faction palettes — one per clan and tribe (Veyrith Universe Creation).
+   Clans = allegiance, worn at the insignia centre: vivid mineral pigments, L≈.72.
+   Tribes = culture, worn at the lower edge: softer dyes, L≈.82.
+   Hues sit in separate neighbourhoods; ~165–195° stays reserved for brand teal.
+   Every -mark clears 4.5:1 on --bg so an insignia reads in its single colour.
+   Roles: -mark (the insignia, 1-colour), -bright (text/highlight), -deep (fills, pressed), -ground (tinted panel). */
+:root{
+/* Clan Othessil — seal vermilion */
+--vy-clan-othessil-mark:#e25f5a;--vy-clan-othessil-bright:#f9aea7;--vy-clan-othessil-deep:#822b2a;--vy-clan-othessil-ground:#28100f;
+/* Clan Ordelith — oxidized copper */
+--vy-clan-ordelith-mark:#e79459;--vy-clan-ordelith-bright:#f8c5a2;--vy-clan-ordelith-deep:#7e4921;--vy-clan-ordelith-ground:#251408;
+/* Clan Suthren — hearth ochre */
+--vy-clan-suthren-mark:#c89f29;--vy-clan-suthren-bright:#e5cb8d;--vy-clan-suthren-deep:#6a5205;--vy-clan-suthren-ground:#1f1704;
+/* Clan Ivrask — courier cobalt */
+--vy-clan-ivrask-mark:#5daaf5;--vy-clan-ivrask-bright:#a9d2fe;--vy-clan-ivrask-deep:#23588a;--vy-clan-ivrask-ground:#0b1928;
+/* Clan Nemevra — unnamed violet */
+--vy-clan-nemevra-mark:#b88ee8;--vy-clan-nemevra-bright:#dac0fb;--vy-clan-nemevra-deep:#624581;--vy-clan-nemevra-ground:#1c1425;
+/* The Kethavai — lantern rose */
+--vy-tribe-kethavai-mark:#e6b2cf;--vy-tribe-kethavai-bright:#f3d9e7;--vy-tribe-kethavai-deep:#805c70;--vy-tribe-kethavai-ground:#25191f;
+/* The Emruli — slow moss */
+--vy-tribe-emruli-mark:#d2d29d;--vy-tribe-emruli-bright:#eaead0;--vy-tribe-emruli-deep:#6f6e49;--vy-tribe-emruli-ground:#1e1e12;
+/* The Delketh — reworked verdigris */
+--vy-tribe-delketh-mark:#6fbe95;--vy-tribe-delketh-bright:#b3e1c7;--vy-tribe-delketh-deep:#34674d;--vy-tribe-delketh-ground:#0e1f16;
+/* The Vauleni — resonant frost */
+--vy-tribe-vauleni-mark:#b2cfe1;--vy-tribe-vauleni-bright:#d8e7f0;--vy-tribe-vauleni-deep:#566d7a;--vy-tribe-vauleni-ground:#161e23;
+/* The Ossari — tide lavender */
+--vy-tribe-ossari-mark:#b4afeb;--vy-tribe-ossari-bright:#dcdaf8;--vy-tribe-ossari-deep:#615d89;--vy-tribe-ossari-ground:#1a1926;
+--vy-clan-ordelith-counter:var(--vy-ivory-300); /* canon: ivory brackets */
+}

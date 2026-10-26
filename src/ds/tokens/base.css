@@ -1,0 +1,13 @@
+/* Global element defaults, from the prototype's :root + element rules */
+*{box-sizing:border-box}
+body{margin:0;font-family:var(--font-ui);color:var(--ink);background:var(--bg);line-height:var(--lh-body)}
+button,input,select{font:inherit}
+a{color:var(--text-link)}
+a:hover{color:var(--ink)}
+:focus-visible{outline:var(--focus-width) solid var(--focus-ring);outline-offset:var(--focus-offset)}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:var(--lh-heading)}
+.high-contrast{--bg:var(--vy-hc-bg);--surface:var(--vy-hc-surface);--raised:var(--vy-hc-raised);--ink:var(--vy-hc-ink);--muted:var(--vy-hc-muted);--line:var(--vy-hc-line);--copper:var(--vy-hc-copper);--teal:var(--vy-hc-teal);--amber:var(--vy-hc-amber)}
+.reduced *{animation:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

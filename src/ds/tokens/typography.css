@@ -1,0 +1,57 @@
+/* Veyrith type tokens. Inter is the product face (prototype). Noto Serif, IBM Plex Mono and Oswald
+   are Google Fonts matches for the faces seen in the derived-canon deck and infographic. */
+:root{
+--font-sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+--font-serif:"Noto Serif",Georgia,"Times New Roman",serif;
+--font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+--font-condensed:Oswald,"Arial Narrow",sans-serif;
+
+--font-ui:var(--font-sans);
+--font-display:var(--font-sans);
+--font-deck:var(--font-serif);
+--font-annotation:var(--font-mono);
+--font-poster:var(--font-condensed);
+
+/* sizes (verbatim from prototype) */
+--fs-display:clamp(3.3rem,8vw,7rem);/* @kind font */    /* h1 wordmark */
+--fs-h2:clamp(1.7rem,3vw,2.6rem);/* @kind font */
+--fs-card-title:1.8rem;/* @kind font */                 /* hero card h3, objective h2, dialog h2 */
+--fs-h3:1.2rem;/* @kind font */
+--fs-lead:1.1rem;/* @kind font */
+--fs-body:1rem;/* @kind font */
+--fs-card-body:.9rem;/* @kind font */
+--fs-task:.9rem;/* @kind font */
+--fs-node:.85rem;/* @kind font */
+--fs-reward:.85rem;/* @kind font */
+--fs-small:.8rem;/* @kind font */
+--fs-footer:.75rem;/* @kind font */
+--fs-eyebrow:.72rem;/* @kind font */
+--fs-badge:.7rem;/* @kind font */
+--fs-node-meta:.67rem;/* @kind font */
+--fs-brand-sub:.63rem;/* @kind font */
+--fs-subtitle:clamp(.85rem,2vw,1.25rem);/* @kind font */
+
+/* weights — the brand uses odd variable weights */
+--fw-display:350;/* @kind font */
+--fw-h2:450;/* @kind font */
+--fw-card-title:450;/* @kind font */
+--fw-h3:600;/* @kind font */
+--fw-brand:600;/* @kind font */
+--fw-strong:750;/* @kind font */                        /* eyebrow, primary button */
+
+/* tracking */
+--ls-display:.14em;/* @kind font */
+--ls-subtitle:.22em;/* @kind font */
+--ls-brand:.2em;/* @kind font */
+--ls-eyebrow:.17em;/* @kind font */
+--ls-brand-sub:.12em;/* @kind font */
+--ls-label:.12em;/* @kind font */                       /* inventory h3 */
+--ls-badge:.08em;/* @kind font */
+--ls-caption:.1em;/* @kind font */
+
+--lh-body:1.55;/* @kind font */
+--lh-heading:1.15;/* @kind font */
+
+--measure-lead:47rem;/* @kind font */
+--measure-tip:36rem;/* @kind font */
+}

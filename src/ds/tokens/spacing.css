@@ -1,0 +1,47 @@
+/* Spacing, radii, borders, shadows, motion — verbatim prototype values (rem-based, not a 4/8 grid) */
+:root{
+--space-1:.2rem;
+--space-2:.4rem;
+--space-3:.5rem;
+--space-4:.6rem;
+--space-5:.7rem;
+--space-6:.9rem;
+--space-7:1rem;
+--space-8:1.2rem;
+--space-9:1.4rem;
+--space-10:2rem;
+--space-page:clamp(1rem,4vw,3.5rem);
+--page-max:1440px;
+--designer-max:960px;
+
+--pad-button:.65rem .95rem;
+--pad-button-small:.45rem .7rem;
+--pad-panel:1.4rem;
+--pad-dialog:2rem;
+--pad-node:.65rem .8rem;
+--pad-task:.85rem;
+
+--radius-control:5px;       /* buttons, selects, checklist rows, witness box */
+--radius-details:6px;
+--radius-card:8px;          /* cards, panels, complete banner */
+--radius-dialog:10px;
+--radius-pill:100px;
+
+--border-width:1px;
+--border-accent:3px;        /* notice left rule, selected-card inset top */
+--frame-stroke:2px;         /* portal frames, sigils */
+--frame-stroke-canvas:7px;  /* frames at 1920×1080 */
+
+--shadow-dialog:0 22px 70px #0006;
+--shadow-selected:inset 0 3px var(--teal);
+--glow-portal:0 0 80px #608f8322;
+
+--focus-width:3px;
+--focus-offset:4px;
+
+--ease-align:ease-in-out;/* @kind other */
+--dur-align:13s;/* @kind other */            /* frames drift toward alignment, alternate, never close */
+--canvas-w:1920px;
+--canvas-h:1080px;
+--progress-h:6px;
+}

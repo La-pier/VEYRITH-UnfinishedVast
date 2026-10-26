@@ -1,0 +1,78 @@
+/* Veyrith color tokens — lifted verbatim from veyrith-prototype.html / veyrith-loading.html,
+   deck values sampled from [Derived Canon] Veyrith Schematic.pptx */
+:root{
+/* base: ink (backgrounds, darkest → lightest) */
+--vy-void:#010407;            /* the dark opening inside the frames (canvas) */
+--vy-void-soft:#020508;       /* portal opening (CSS) */
+--vy-ink-950:#070d12;         /* loading screen / canvas background */
+--vy-ink-900:#090f14;         /* app background (--bg) */
+--vy-ink-850:#101b22;         /* surface: cards, panels, dialog */
+--vy-ink-800:#18272f;         /* raised: buttons, selects, progress track */
+--vy-ink-750:#20373d;         /* raised hover */
+--vy-slate-600:#43575c;       /* hairlines, borders, dividers */
+/* base: parchment (text) */
+--vy-ivory-100:#f2eadb;       /* warm ivory ink */
+--vy-ivory-300:#ded8c7;       /* ceramic frame stroke */
+--vy-sage-300:#b9c2bf;        /* muted text */
+/* accents */
+--vy-copper-400:#ce9974;      /* oxidized copper: structures, eyebrows, insignia */
+--vy-copper-700:#9c694e;      /* deck copper (printed frames) */
+--vy-teal-300:#89d5c2;        /* relationship paths, primary action, success */
+--vy-teal-950:#071b17;        /* text on teal */
+--vy-teal-900:#19352f;        /* complete-banner gradient start */
+--vy-amber-300:#f0c381;       /* restrained warnings, focus ring */
+/* deck (derived canon) */
+--vy-blueprint-900:#15212f;   /* schematic deck navy */
+--vy-blueprint-950:#05111d;   /* deck vignette */
+--vy-parchment-50:#f4eddb;    /* deck text */
+/* high contrast set (body.high-contrast in prototype) */
+--vy-hc-bg:#000;--vy-hc-surface:#080808;--vy-hc-raised:#171717;--vy-hc-ink:#fff;--vy-hc-muted:#e1e1e1;--vy-hc-line:#a5aaa9;--vy-hc-copper:#ffc69b;--vy-hc-teal:#a8ffe5;--vy-hc-amber:#ffda9f;
+
+/* semantic aliases (names mirror the prototype's own --bg/--surface/... vars) */
+--bg:var(--vy-ink-900);
+--surface:var(--vy-ink-850);
+--raised:var(--vy-ink-800);
+--raised-hover:var(--vy-ink-750);
+--ink:var(--vy-ivory-100);
+--muted:var(--vy-sage-300);
+--line:var(--vy-slate-600);
+--copper:var(--vy-copper-400);
+--teal:var(--vy-teal-300);
+--amber:var(--vy-amber-300);
+--on-teal:var(--vy-teal-950);
+--frame-ivory:var(--vy-ivory-300);
+
+--surface-page:var(--bg);
+--surface-loading:var(--vy-ink-950);
+--surface-card:var(--surface);
+--surface-raised:var(--raised);
+--surface-inset:var(--bg);              /* checklist rows, map nodes sit on --bg inside panels */
+--surface-void:var(--vy-void);
+--surface-notice:#c8946910;             /* copper @ ~6% */
+--surface-backdrop:#02070be8;           /* dialog backdrop */
+--surface-banner:linear-gradient(120deg,var(--vy-teal-900),var(--vy-ink-850));
+
+--text-body:var(--ink);
+--text-muted:var(--muted);
+--text-eyebrow:var(--copper);
+--text-link:var(--teal);
+--text-reward:var(--teal);
+--text-warning:var(--amber);
+--text-on-primary:var(--on-teal);
+
+--border-default:var(--line);
+--border-hover:var(--teal);
+--border-selected:var(--teal);
+--border-danger:var(--amber);
+--border-dialog:var(--copper);
+--focus-ring:var(--amber);
+
+--state-ok:var(--teal);
+--state-warn:var(--amber);
+--state-locked:var(--muted);
+
+/* hero shape language colors (loading canvas frame order) */
+--frame-outer:var(--copper);
+--frame-mid:var(--teal);
+--frame-inner:var(--frame-ivory);
+}
