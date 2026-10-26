@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Badge, Button, Chip, Eyebrow, Footer, Notice, Portal, Sigil, SpoilerDetails, Topbar } from "./ds/components.jsx";
 import { glyph } from "./glyph.jsx";
 import { AUDIT, FACTIONS, FX, HEROES, NODES, SP, SPECIAL, TAGC, brightOf, colorOf, groundOf, tagLabel } from "./data.js";
+import { ART } from "./art.js";
 
 const LEGEND = [
   ["canon", "var(--muted)", "stated in the universe document or the game bible, with section."],
@@ -9,6 +10,7 @@ const LEGEND = [
   ["undecided", "var(--amber)", "missing from both sources. needs your decision."],
   ["spoiler boundary", "var(--amber)", "designer-only canon. hidden in player view."],
   ["design-system proposal", "var(--muted)", "faction colours and drawn glyphs. presentation only, not lore."],
+  ["concept art", "var(--muted)", "environment images from your deck. visual direction, not canon."],
 ].map(([label, color, desc]) => ({ label, color, desc }));
 
 const fx = (list, showTags) => list.map(f => ({ text: f.text, label: showTags ? tagLabel(f) : "", color: TAGC[f.tag] }));
@@ -167,6 +169,15 @@ function Atlas({ s, set, d, visible, showTags, still }) {
         <aside className="vy-panel" style={{ flex: "1 1 320px", maxWidth: "100%", display: "grid", gap: ".2rem", alignContent: "start" }}>
           <Eyebrow>{selData.eyebrow}</Eyebrow>
           <h2 className="vy-h2" style={{ margin: "0 0 .3rem" }}>{selData.name}</h2>
+          {ART[s.sel] && (
+            <figure style={{ margin: "0 0 .6rem", display: "grid", gap: ".5rem" }}>
+              <img src={ART[s.sel].src} alt={ART[s.sel].alt} width={646} height={809} style={{ display: "block", width: "100%", height: "auto", maxHeight: 360, objectFit: "cover", border: "1px solid var(--line)", borderRadius: 6 }} />
+              <figcaption style={{ display: "grid", gap: ".25rem" }}>
+                {showTags && <span style={labelStyle("var(--muted)")}>concept art · environments deck · not canon</span>}
+                <span style={{ fontSize: ".82rem", lineHeight: 1.5, color: "var(--muted)", textWrap: "pretty" }}>{ART[s.sel].note}</span>
+              </figcaption>
+            </figure>
+          )}
           {facts.map((f, i) => <FactRow key={i} f={f} size=".88rem" lh="1.5" />)}
           {hasSpoilers && (
             <SpoilerDetails title="designer material" spoiler open>
